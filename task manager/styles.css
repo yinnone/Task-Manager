@@ -1,0 +1,150 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.app {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 1050px;
+    position: relative;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+    margin:0 0 10px;
+}
+
+.dark-mode .app {
+    background-color: #444;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode input, .dark-mode select, .dark-mode textarea {
+    background-color: #555;
+    color: #f4f4f4;
+    border: 1px solid #666;
+}
+
+.dark-mode button {
+    background-color: #555;
+    color: #f4f4f4;
+}
+
+.dark-mode button:hover {
+    background-color: #666;
+}
+
+/* Task Manager Styles */
+.task-input, .search, .filters, .sorting {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.task-input input, .search input, .task-input select, .task-input textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.task-input button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.task-input button:hover {
+    background-color: #218838;
+}
+
+.filters, .sorting {
+    display: flex;
+    gap: 10px;
+}
+
+.filters .filter-btn, .sorting .sort-btn {
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.filters .filter-btn.active, .sorting .sort-btn.active {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+li.archived {
+    background-color: #e0e0e0;
+}
+
+li button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #dc3545;
+}
+
+.priority-low::before {
+    content: "🔵"; /* Blue circle */
+}
+
+.priority-medium::before {
+    content: "🟠"; /* Orange circle */
+}
+
+.priority-high::before {
+    content: "🔴"; /* Red circle */
+}
+
+.task-edit {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.task-edit input, .task-edit select {
+    margin-right: 5px;
+}
+
+.task-edit button {
+    margin-right: 5px;
+}
