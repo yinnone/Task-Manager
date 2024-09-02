@@ -162,10 +162,6 @@ document.addEventListener('DOMContentLoaded', () => {
         toggleThemeButton.textContent = darkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode';
     });
 
-    logoutButton.addEventListener('click', () => {
-        localStorage.removeItem('loggedIn');
-        window.location.href = 'login.html'; // Redirect to login page
-    });
 
     function getActiveFilter() {
         return document.querySelector('.filters .filter-btn.active')?.dataset.filter || 'all';
