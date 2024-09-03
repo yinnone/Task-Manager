@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const filterButtons = document.querySelectorAll('.filter-btn');
     const sortButtons = document.querySelectorAll('.sort-btn');
     const searchInput = document.getElementById('search-input');
-    const toggleThemeButton = document.getElementById('toggle-theme');
+    const toggleThemeButton = document.getElementById('switch-bg');
 
     let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
     let darkMode = JSON.parse(localStorage.getItem('darkMode')) || false;
