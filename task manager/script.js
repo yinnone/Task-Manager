@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const sortButtons = document.querySelectorAll('.sort-btn');
     const searchInput = document.getElementById('search-input');
     const toggleThemeButton = document.getElementById('toggle-theme');
-    const logoutButton = document.getElementById('logout');
 
     let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
     let darkMode = JSON.parse(localStorage.getItem('darkMode')) || false;
